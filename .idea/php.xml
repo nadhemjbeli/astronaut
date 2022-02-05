@@ -95,6 +95,9 @@
       <path value="$PROJECT_DIR$/vendor/php-extended/php-uri-parser-object" />
       <path value="$PROJECT_DIR$/vendor/php-extended/polyfill-php80-stringable" />
       <path value="$PROJECT_DIR$/vendor/php-extended/polyfill-str-levenshtein" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
