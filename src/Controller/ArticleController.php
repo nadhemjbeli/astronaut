@@ -17,6 +17,16 @@ use Twig\Environment;
 class ArticleController extends AbstractController
 {
     /**
+     * Currently unused: just showing a controller with constructor!
+     */
+    private $isDebug;
+
+    public function __construct(bool $isDebug){
+
+        $this->isDebug = $isDebug;
+    }
+
+    /**
      * @Route("/", name="app_homepage")
      */
     public function homepage()
@@ -28,6 +38,7 @@ class ArticleController extends AbstractController
      */
     public function show($slug, MarkdownHelper $markdownHelper)
     {
+
 
         $comments = [
             'I ate a normal rock once. It did NOT taste like bacon!',
