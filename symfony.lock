@@ -17,6 +17,9 @@
     "doctrine/lexer": {
         "version": "1.2.2"
     },
+    "fig/http-message-util": {
+        "version": "1.1.5"
+    },
     "guzzlehttp/guzzle": {
         "version": "6.5.5"
     },
@@ -25,6 +28,9 @@
     },
     "guzzlehttp/psr7": {
         "version": "1.8.3"
+    },
+    "httpsoft/http-message": {
+        "version": "1.0.9"
     },
     "knplabs/knp-markdown-bundle": {
         "version": "1.10.0"
@@ -40,6 +46,36 @@
     },
     "nexylan/slack-bundle": {
         "version": "v2.3.0"
+    },
+    "php-extended/php-domain-interface": {
+        "version": "3.0.26"
+    },
+    "php-extended/php-domain-object": {
+        "version": "3.0.19"
+    },
+    "php-extended/php-http-message-factory-psr17": {
+        "version": "3.2.4"
+    },
+    "php-extended/php-http-message-psr7": {
+        "version": "3.2.21"
+    },
+    "php-extended/php-parser-interface": {
+        "version": "3.1.9"
+    },
+    "php-extended/php-parser-object": {
+        "version": "3.1.5"
+    },
+    "php-extended/php-uri-parser-interface": {
+        "version": "3.0.36"
+    },
+    "php-extended/php-uri-parser-object": {
+        "version": "3.1.4"
+    },
+    "php-extended/polyfill-php80-stringable": {
+        "version": "1.0.38"
+    },
+    "php-extended/polyfill-str-levenshtein": {
+        "version": "1.0.15"
     },
     "php-http/client-common": {
         "version": "2.5.0"
@@ -112,6 +148,24 @@
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "sunrise/http-factory": {
+        "version": "v2.0.0"
+    },
+    "sunrise/http-header": {
+        "version": "v2.0.0"
+    },
+    "sunrise/http-message": {
+        "version": "v2.1.1"
+    },
+    "sunrise/http-server-request": {
+        "version": "v2.0.0"
+    },
+    "sunrise/stream": {
+        "version": "v1.3.1"
+    },
+    "sunrise/uri": {
+        "version": "v1.2.1"
     },
     "symfony/asset": {
         "version": "v4.4.37"

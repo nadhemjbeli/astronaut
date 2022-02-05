@@ -80,6 +80,24 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/php-http/message-factory" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/php-http/promise" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/php-http/stopwatch-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fig/http-message-util" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sunrise/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sunrise/http-header" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sunrise/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sunrise/http-server-request" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sunrise/stream" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sunrise/uri" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/httpsoft/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/php-domain-interface" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/php-domain-object" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/php-http-message-factory-psr17" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/php-http-message-psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/php-parser-interface" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/php-parser-object" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/php-uri-parser-interface" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/php-uri-parser-object" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/polyfill-php80-stringable" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-extended/polyfill-str-levenshtein" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

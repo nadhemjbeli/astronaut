@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ba09a255c1ff52161b7d46f59563e3d",
+    "content-hash": "751102de572d43321baf53ca36bcd63a",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -219,6 +219,62 @@
                 }
             ],
             "time": "2022-01-12T08:27:12+00:00"
+        },
+        {
+            "name": "fig/http-message-util",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message-util.git",
+                "reference": "9d94dc0154230ac39e5bf89398b324a86f63f765"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message-util/zipball/9d94dc0154230ac39e5bf89398b324a86f63f765",
+                "reference": "9d94dc0154230ac39e5bf89398b324a86f63f765",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 || ^7.0 || ^8.0"
+            },
+            "suggest": {
+                "psr/http-message": "The package containing the PSR-7 interfaces"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fig\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Utility classes and constants for use with PSR-7 (psr/http-message)",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/http-message-util/issues",
+                "source": "https://github.com/php-fig/http-message-util/tree/1.1.5"
+            },
+            "time": "2020-11-24T22:02:12+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -486,6 +542,70 @@
             "time": "2021-10-05T13:56:00+00:00"
         },
         {
+            "name": "httpsoft/http-message",
+            "version": "1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/httpsoft/http-message.git",
+                "reference": "d7c936ad426621bc20aaa425137d8e9ebd514888"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/httpsoft/http-message/zipball/d7c936ad426621bc20aaa425137d8e9ebd514888",
+                "reference": "d7c936ad426621bc20aaa425137d8e9ebd514888",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "php-http/psr7-integration-tests": "1.1.1",
+                "phpunit/phpunit": "^9.5",
+                "roave/infection-static-analysis-plugin": "^1.8",
+                "squizlabs/php_codesniffer": "^3.6",
+                "vimeo/psalm": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HttpSoft\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Evgeniy Zyubin",
+                    "email": "mail@devanych.ru",
+                    "homepage": "https://devanych.ru/",
+                    "role": "Founder and lead developer"
+                }
+            ],
+            "description": "Strict and fast implementation of PSR-7 and PSR-17",
+            "homepage": "https://httpsoft.org/",
+            "keywords": [
+                "http",
+                "http-message",
+                "php",
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "docs": "https://httpsoft.org/docs/message",
+                "issues": "https://github.com/httpsoft/http-message/issues",
+                "source": "https://github.com/httpsoft/http-message"
+            },
+            "time": "2021-07-13T08:28:50+00:00"
+        },
+        {
             "name": "knplabs/knp-markdown-bundle",
             "version": "1.10.0",
             "source": {
@@ -733,6 +853,539 @@
                 "source": "https://github.com/nexylan/slack-bundle/tree/v2.3.0"
             },
             "time": "2021-03-31T13:25:07+00:00"
+        },
+        {
+            "name": "php-extended/php-domain-interface",
+            "version": "3.0.26",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/php-domain-interface.git",
+                "reference": "63e8fc1526edcb3ac416c37c2268c56f0655e284"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fphp-domain-interface/repository/archive.zip?sha=63e8fc1526edcb3ac416c37c2268c56f0655e284",
+                "reference": "63e8fc1526edcb3ac416c37c2268c56f0655e284",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=1",
+                "php-extended/polyfill-php80-stringable": "^1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\Domain\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastazor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "A library to manipulate domain names",
+            "homepage": "https://gitlab.com/php-extended/php-domain-interface",
+            "keywords": [
+                "domain",
+                "interface",
+                "name",
+                "php",
+                "specification"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/php-domain-interface/issues",
+                "source": "https://gitlab.com/php-extended/php-domain-interface"
+            },
+            "time": "2022-01-31T12:07:48+00:00"
+        },
+        {
+            "name": "php-extended/php-domain-object",
+            "version": "3.0.19",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/php-domain-object.git",
+                "reference": "4f6b006f647d5d0908e750ff17ebd50634a141c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fphp-domain-object/repository/archive.zip?sha=4f6b006f647d5d0908e750ff17ebd50634a141c0",
+                "reference": "4f6b006f647d5d0908e750ff17ebd50634a141c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-extended/php-domain-interface": "^3"
+            },
+            "require-dev": {
+                "php-extended/placeholder-phpunit": ">=1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\Domain\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "A library that implements the php-extended/php-domain-interface library",
+            "homepage": "https://gitlab.com/php-extended/php-domain-object",
+            "keywords": [
+                "domain",
+                "implementation",
+                "object",
+                "php"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/php-domain-object/issues",
+                "source": "https://gitlab.com/php-extended/php-domain-object"
+            },
+            "time": "2022-01-31T13:28:54+00:00"
+        },
+        {
+            "name": "php-extended/php-http-message-factory-psr17",
+            "version": "3.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/php-http-message-factory-psr17.git",
+                "reference": "ae585818359d10831e3728fe3459cd224021defa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fphp-http-message-factory-psr17/repository/archive.zip?sha=ae585818359d10831e3728fe3459cd224021defa",
+                "reference": "ae585818359d10831e3728fe3459cd224021defa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-extended/php-http-message-psr7": "^3",
+                "php-extended/php-uri-parser-object": "^3",
+                "php-extended/polyfill-php80-stringable": ">=1",
+                "psr/http-factory": "^1"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "^1"
+            },
+            "require-dev": {
+                "php-extended/placeholder-phpunit": ">=1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\HttpMessage\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "An implementation of the psr-17 based on the php-http-message-psr7 library",
+            "homepage": "https://gitlab.com/php-extended/php-http-message-factory-psr17",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "php",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response",
+                "stream"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/php-http-message-factory-psr17/issues",
+                "source": "https://gitlab.com/php-extended/php-http-message-factory-psr17"
+            },
+            "time": "2022-01-31T17:43:47+00:00"
+        },
+        {
+            "name": "php-extended/php-http-message-psr7",
+            "version": "3.2.21",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/php-http-message-psr7.git",
+                "reference": "8e0195b5c0744dc06fb8de804f3ef3c89e31f775"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fphp-http-message-psr7/repository/archive.zip?sha=8e0195b5c0744dc06fb8de804f3ef3c89e31f775",
+                "reference": "8e0195b5c0744dc06fb8de804f3ef3c89e31f775",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-extended/php-domain-object": ">=3",
+                "php-extended/polyfill-php80-stringable": ">=1",
+                "php-extended/polyfill-str-levenshtein": ">=1",
+                "psr/http-message": "^1"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "php-extended/placeholder-phpunit": ">=1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\HttpMessage\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "Another implementation of the psr7 : php-fig/http-message interface library",
+            "homepage": "https://gitlab.com/php-extended/php-http-message-psr7",
+            "keywords": [
+                "http",
+                "message",
+                "psr7",
+                "stream"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/php-http-message-psr7/issues",
+                "source": "https://gitlab.com/php-extended/php-http-message-psr7"
+            },
+            "time": "2022-01-31T17:45:48+00:00"
+        },
+        {
+            "name": "php-extended/php-parser-interface",
+            "version": "3.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/php-parser-interface.git",
+                "reference": "428d994c5085410823c5d38b5432b7a47bf1fffb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fphp-parser-interface/repository/archive.zip?sha=428d994c5085410823c5d38b5432b7a47bf1fffb",
+                "reference": "428d994c5085410823c5d38b5432b7a47bf1fffb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-extended/polyfill-php80-stringable": ">=1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\Parser\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "An abstract interface implementation for parsers",
+            "homepage": "https://gitlab.com/php-extended/php-parser-interface",
+            "keywords": [
+                "interface",
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/php-parser-interface/issues",
+                "source": "https://gitlab.com/php-extended/php-parser-interface"
+            },
+            "time": "2022-01-31T11:54:40+00:00"
+        },
+        {
+            "name": "php-extended/php-parser-object",
+            "version": "3.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/php-parser-object.git",
+                "reference": "6c4ad1f4d153f72c18c0bafc691a2f5255329a5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fphp-parser-object/repository/archive.zip?sha=6c4ad1f4d153f72c18c0bafc691a2f5255329a5c",
+                "reference": "6c4ad1f4d153f72c18c0bafc691a2f5255329a5c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-extended/php-parser-interface": "^3",
+                "php-extended/polyfill-php80-stringable": ">=1"
+            },
+            "require-dev": {
+                "php-extended/placeholder-phpunit": ">=1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\Parser\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "An implementation of the php-extended/php-parser-interface library",
+            "homepage": "https://gitlab.com/php-extended/php-parser-interface",
+            "keywords": [
+                "implementation",
+                "object",
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/php-parser-interface/issues",
+                "source": "https://gitlab.com/php-extended/php-parser-interface"
+            },
+            "time": "2022-02-01T08:40:16+00:00"
+        },
+        {
+            "name": "php-extended/php-uri-parser-interface",
+            "version": "3.0.36",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/php-uri-parser-interface.git",
+                "reference": "02a989ae725e10990da40b59bd15b09d313022fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fphp-uri-parser-interface/repository/archive.zip?sha=02a989ae725e10990da40b59bd15b09d313022fd",
+                "reference": "02a989ae725e10990da40b59bd15b09d313022fd",
+                "shasum": ""
+            },
+            "require": {
+                "php-extended/php-parser-interface": "^3",
+                "php-extended/polyfill-php80-stringable": ">=1",
+                "psr/http-message": "^1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\Uri\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "A library to parse uniform resource identifiers (uri)",
+            "homepage": "https://gitlab.com/php-extended/php-uri-parser-interface",
+            "keywords": [
+                "interface",
+                "parser",
+                "php",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/php-uri-parser-interface/issues",
+                "source": "https://gitlab.com/php-extended/php-uri-parser-interface"
+            },
+            "time": "2022-01-31T12:02:22+00:00"
+        },
+        {
+            "name": "php-extended/php-uri-parser-object",
+            "version": "3.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/php-uri-parser-object.git",
+                "reference": "9f99b2db1e78ee4506bccff41198be1f903f7c92"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fphp-uri-parser-object/repository/archive.zip?sha=9f99b2db1e78ee4506bccff41198be1f903f7c92",
+                "reference": "9f99b2db1e78ee4506bccff41198be1f903f7c92",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-extended/php-http-message-psr7": "^3",
+                "php-extended/php-parser-object": "^3",
+                "php-extended/php-uri-parser-interface": "^3",
+                "php-extended/polyfill-php80-stringable": ">=1"
+            },
+            "require-dev": {
+                "php-extended/placeholder-phpunit": ">=1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\Uri\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "A library that implements the php-extended/php-uri-parser-interface library",
+            "homepage": "https://gitlab.com/php-extended/php-uri-parser-object",
+            "keywords": [
+                "implementation",
+                "object",
+                "parser",
+                "php",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/php-uri-parser-object/issues",
+                "source": "https://gitlab.com/php-extended/php-uri-parser-object"
+            },
+            "time": "2022-01-31T17:24:12+00:00"
+        },
+        {
+            "name": "php-extended/polyfill-php80-stringable",
+            "version": "1.0.38",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/polyfill-php80-stringable.git",
+                "reference": "aec63e0b8210d1c059567a6cc1beb218cd62d483"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fpolyfill-php80-stringable/repository/archive.zip?sha=aec63e0b8210d1c059567a6cc1beb218cd62d483",
+                "reference": "aec63e0b8210d1c059567a6cc1beb218cd62d483",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "A polyfill that adds the stringable interface added in php8.0 to previous versions of php",
+            "homepage": "https://gitlab.com/php-extended/polyfill-php80-stringable",
+            "keywords": [
+                "php",
+                "php8",
+                "polyfill",
+                "stringable"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/polyfill-php80-stringable/issues",
+                "source": "https://gitlab.com/php-extended/polyfill-php80-stringable"
+            },
+            "time": "2022-01-31T11:54:23+00:00"
+        },
+        {
+            "name": "php-extended/polyfill-str-levenshtein",
+            "version": "1.0.15",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.com/php-extended/polyfill-str-levenshtein.git",
+                "reference": "596246c0c069449243c4f0c0f6a8326f18222300"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://gitlab.com/api/v4/projects/php-extended%2Fpolyfill-str-levenshtein/repository/archive.zip?sha=596246c0c069449243c4f0c0f6a8326f18222300",
+                "reference": "596246c0c069449243c4f0c0f6a8326f18222300",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "php-extended/placeholder-phpunit": ">=1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpExtended\\Polyfill\\": "src"
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anastaszor",
+                    "homepage": "https://gitlab.com/Anastaszor",
+                    "role": "developer"
+                }
+            ],
+            "description": "A php implementation of the levenshtein distance without length limitation",
+            "homepage": "https://gitlab.com/php-extended/polyfill-str-levenshtein",
+            "keywords": [
+                "distance",
+                "implementation",
+                "levenshtein",
+                "php",
+                "unlimited"
+            ],
+            "support": {
+                "issues": "https://gitlab.com/php-extended/polyfill-str-levenshtein/issues",
+                "source": "https://gitlab.com/php-extended/polyfill-str-levenshtein"
+            },
+            "time": "2022-01-31T13:29:58+00:00"
         },
         {
             "name": "php-http/client-common",
@@ -1841,6 +2494,401 @@
                 "source": "https://github.com/sensiolabs/SensioFrameworkExtraBundle/tree/v6.2.6"
             },
             "time": "2022-01-14T11:51:13+00:00"
+        },
+        {
+            "name": "sunrise/http-factory",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunrise-php/http-factory.git",
+                "reference": "a8d1b0ed7eafca969ed3474251430478c3cfb7fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunrise-php/http-factory/zipball/a8d1b0ed7eafca969ed3474251430478c3cfb7fa",
+                "reference": "a8d1b0ed7eafca969ed3474251430478c3cfb7fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0",
+                "sunrise/http-message": "^2.0",
+                "sunrise/http-server-request": "^2.0",
+                "sunrise/stream": "^1.2",
+                "sunrise/uri": "^1.2"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7.5.20|9.5.0",
+                "sunrise/coding-standard": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sunrise\\Http\\Factory\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anatoly Fenric",
+                    "email": "anatoly@fenric.ru",
+                    "homepage": "https://anatoly.fenric.ru/"
+                }
+            ],
+            "description": "Sunrise // HTTP factory for PHP 7.1+ based on PSR-17",
+            "homepage": "https://github.com/sunrise-php/http-factory",
+            "keywords": [
+                "PHP7",
+                "fenric",
+                "http",
+                "http-factory",
+                "php8",
+                "psr-17",
+                "sunrise"
+            ],
+            "support": {
+                "issues": "https://github.com/sunrise-php/http-factory/issues",
+                "source": "https://github.com/sunrise-php/http-factory/tree/v2.0.0"
+            },
+            "time": "2021-10-26T00:38:21+00:00"
+        },
+        {
+            "name": "sunrise/http-header",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunrise-php/http-header.git",
+                "reference": "db01d69c408939edea4be96492375a921bb39cbd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunrise-php/http-header/zipball/db01d69c408939edea4be96492375a921bb39cbd",
+                "reference": "db01d69c408939edea4be96492375a921bb39cbd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "sunrise/coding-standard": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sunrise\\Http\\Header\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anatoly Fenric",
+                    "email": "anatoly@fenric.ru",
+                    "homepage": "https://anatoly.fenric.ru/"
+                }
+            ],
+            "description": "Sunrise // HTTP header interface",
+            "homepage": "https://github.com/sunrise-php/http-header",
+            "keywords": [
+                "HTTP-header",
+                "fenric",
+                "http",
+                "sunrise"
+            ],
+            "support": {
+                "issues": "https://github.com/sunrise-php/http-header/issues",
+                "source": "https://github.com/sunrise-php/http-header/tree/v2.0.0"
+            },
+            "time": "2021-10-22T14:52:39+00:00"
+        },
+        {
+            "name": "sunrise/http-message",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunrise-php/http-message.git",
+                "reference": "140918dd80352caedb4cf91be4f6e4bdd7a8768c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunrise-php/http-message/zipball/140918dd80352caedb4cf91be4f6e4bdd7a8768c",
+                "reference": "140918dd80352caedb4cf91be4f6e4bdd7a8768c",
+                "shasum": ""
+            },
+            "require": {
+                "fig/http-message-util": "^1.1",
+                "php": "^7.1|^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "sunrise/http-header": "^2.0",
+                "sunrise/stream": "^1.2",
+                "sunrise/uri": "^1.2"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7.5.20|9.5.0",
+                "sunrise/coding-standard": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "constants/REASON_PHRASES.php"
+                ],
+                "psr-4": {
+                    "Sunrise\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anatoly Fenric",
+                    "email": "anatoly@fenric.ru",
+                    "homepage": "https://anatoly.fenric.ru/"
+                }
+            ],
+            "description": "Sunrise // HTTP message wrapper for PHP 7.1+ based on RFC-7230, PSR-7 and PSR-17",
+            "homepage": "https://github.com/sunrise-php/http-message",
+            "keywords": [
+                "fenric",
+                "http",
+                "http-message",
+                "http-request",
+                "http-response",
+                "php-7",
+                "php-8",
+                "psr-17",
+                "psr-7",
+                "rfc-7230",
+                "sunrise"
+            ],
+            "support": {
+                "issues": "https://github.com/sunrise-php/http-message/issues",
+                "source": "https://github.com/sunrise-php/http-message/tree/v2.1.1"
+            },
+            "time": "2021-11-30T09:44:27+00:00"
+        },
+        {
+            "name": "sunrise/http-server-request",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunrise-php/http-server-request.git",
+                "reference": "69f9c75a223a6d66a3cff81ee9fdc78824aa44c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunrise-php/http-server-request/zipball/69f9c75a223a6d66a3cff81ee9fdc78824aa44c0",
+                "reference": "69f9c75a223a6d66a3cff81ee9fdc78824aa44c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "sunrise/http-message": "^2.0",
+                "sunrise/stream": "^1.2",
+                "sunrise/uri": "^1.2"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7.5.20|9.5.0",
+                "sunrise/coding-standard": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sunrise\\Http\\ServerRequest\\": "src/"
+                },
+                "files": [
+                    "functions/request_body.php",
+                    "functions/request_files.php",
+                    "functions/request_headers.php",
+                    "functions/request_method.php",
+                    "functions/request_protocol.php",
+                    "functions/request_uri.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anatoly Fenric",
+                    "email": "anatoly@fenric.ru",
+                    "homepage": "https://anatoly.fenric.ru/"
+                },
+                {
+                    "name": "李昀陞 (Peter)",
+                    "email": "peter279k@gmail.com",
+                    "homepage": "https://github.com/peter279k"
+                }
+            ],
+            "description": "Sunrise // HTTP server request wrapper for PHP 7.1+ based on PSR-7 and PSR-17",
+            "homepage": "https://github.com/sunrise-php/http-server-request",
+            "keywords": [
+                "PHP7",
+                "fenric",
+                "http",
+                "http-server-request",
+                "php8",
+                "psr-17",
+                "psr-7",
+                "sunrise"
+            ],
+            "support": {
+                "issues": "https://github.com/sunrise-php/http-server-request/issues",
+                "source": "https://github.com/sunrise-php/http-server-request/tree/v2.0.0"
+            },
+            "time": "2021-10-26T00:12:50+00:00"
+        },
+        {
+            "name": "sunrise/stream",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunrise-php/stream.git",
+                "reference": "4ce9d9c657a333d545a21e95909d33688c8cd704"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunrise-php/stream/zipball/4ce9d9c657a333d545a21e95909d33688c8cd704",
+                "reference": "4ce9d9c657a333d545a21e95909d33688c8cd704",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7.5.20|9.5.0",
+                "sunrise/coding-standard": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sunrise\\Stream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anatoly Fenric",
+                    "email": "anatoly@fenric.ru",
+                    "homepage": "https://anatoly.fenric.ru/"
+                },
+                {
+                    "name": "李昀陞 (Peter)",
+                    "email": "peter279k@gmail.com",
+                    "homepage": "https://github.com/peter279k"
+                }
+            ],
+            "description": "Simple Stream wrapper for PHP 7.1+ based on PSR-7 & PSR-17",
+            "homepage": "https://github.com/sunrise-php/stream",
+            "keywords": [
+                "PHP7",
+                "fenric",
+                "http",
+                "php8",
+                "psr-17",
+                "psr-7",
+                "stream",
+                "sunrise"
+            ],
+            "support": {
+                "issues": "https://github.com/sunrise-php/stream/issues",
+                "source": "https://github.com/sunrise-php/stream/tree/v1.3.1"
+            },
+            "time": "2021-11-30T10:05:45+00:00"
+        },
+        {
+            "name": "sunrise/uri",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunrise-php/uri.git",
+                "reference": "d068f41e5b8dc4f26da0daae2b9ff9ed965ba58d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunrise-php/uri/zipball/d068f41e5b8dc4f26da0daae2b9ff9ed965ba58d",
+                "reference": "d068f41e5b8dc4f26da0daae2b9ff9ed965ba58d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "7.5.20|9.5.0",
+                "sunrise/coding-standard": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sunrise\\Uri\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anatoly Fenric",
+                    "email": "anatoly@fenric.ru",
+                    "homepage": "https://anatoly.fenric.ru/"
+                },
+                {
+                    "name": "李昀陞 (Peter)",
+                    "email": "peter279k@gmail.com",
+                    "homepage": "https://github.com/peter279k"
+                }
+            ],
+            "description": "Simple URI wrapper for PHP 7.1+ based on RFC-3986, PSR-7 & PSR-17",
+            "homepage": "https://github.com/sunrise-php/uri",
+            "keywords": [
+                "PHP7",
+                "fenric",
+                "http",
+                "parser",
+                "php8",
+                "psr-17",
+                "psr-7",
+                "rfc-3986",
+                "sunrise",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://github.com/sunrise-php/uri/issues",
+                "source": "https://github.com/sunrise-php/uri/tree/v1.2.1"
+            },
+            "time": "2021-11-30T09:51:05+00:00"
         },
         {
             "name": "symfony/asset",

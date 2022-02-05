@@ -77,6 +77,24 @@
       <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
       <path value="$PROJECT_DIR$/vendor/php-http/promise" />
       <path value="$PROJECT_DIR$/vendor/php-http/stopwatch-plugin" />
+      <path value="$PROJECT_DIR$/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/vendor/sunrise/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/sunrise/http-header" />
+      <path value="$PROJECT_DIR$/vendor/sunrise/http-message" />
+      <path value="$PROJECT_DIR$/vendor/sunrise/http-server-request" />
+      <path value="$PROJECT_DIR$/vendor/sunrise/stream" />
+      <path value="$PROJECT_DIR$/vendor/sunrise/uri" />
+      <path value="$PROJECT_DIR$/vendor/httpsoft/http-message" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/php-domain-interface" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/php-domain-object" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/php-http-message-factory-psr17" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/php-http-message-psr7" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/php-parser-interface" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/php-parser-object" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/php-uri-parser-interface" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/php-uri-parser-object" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/polyfill-php80-stringable" />
+      <path value="$PROJECT_DIR$/vendor/php-extended/polyfill-str-levenshtein" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
