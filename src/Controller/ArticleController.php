@@ -46,18 +46,13 @@ class ArticleController extends AbstractController
     /**
      * @Route("/news/{slug}", name="article_show")
      */
-    public function show($slug, MarkdownHelper $markdownHelper, EntityManagerInterface $em/*, SlackClient $slack*/)
+    public function show(Article $article /*, MarkdownHelper $markdownHelper, SlackClient $slack*/)
     {
 
-//        if($slug == 'aa'){
+//        if($article->getSlug() == 'aa'){
 //            $slack->sendMessage('nadhem', 'ah kirk, my old friend...');
 //        }
-        $repository = $em->getRepository(Article::class);
-        /** @var Article $article */
-        $article = $repository->findOneBy(['slug' => $slug]);
-        if(!$article){
-            throw $this->createNotFoundException(sprintf("No article for slug: %s", $slug));
-        }
+
 
 
 
