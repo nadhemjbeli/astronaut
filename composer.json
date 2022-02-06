@@ -16,6 +16,7 @@
         "php-http/guzzle6-adapter": "^2.0",
         "psr/http-factory": "^1.0",
         "sensio/framework-extra-bundle": "^6.2",
+        "stof/doctrine-extensions-bundle": "^1.7",
         "sunrise/http-factory": "^2.0",
         "symfony/asset": "4.4.*",
         "symfony/console": "4.4.*",
@@ -75,7 +76,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
+            "allow-contrib": true,
             "require": "4.4.*"
         }
     },
