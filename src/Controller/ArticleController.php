@@ -6,6 +6,7 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use App\Repository\ArticleRepository;
+use App\Repository\CommentRepository;
 use App\Service\MarkdownHelper;
 use App\Service\SlackClient;
 use Doctrine\ORM\EntityManagerInterface;
@@ -46,7 +47,7 @@ class ArticleController extends AbstractController
     /**
      * @Route("/news/{slug}", name="article_show")
      */
-    public function show(Article $article /*, MarkdownHelper $markdownHelper, SlackClient $slack*/)
+    public function show(Article $article, CommentRepository $commentRepository/*, MarkdownHelper $markdownHelper, SlackClient $slack*/)
     {
 
 //        if($article->getSlug() == 'aa'){
@@ -54,20 +55,14 @@ class ArticleController extends AbstractController
 //        }
 
 
-
-
-        $comments = [
-            'I ate a normal rock once. It did NOT taste like bacon!',
-            'Woohoo! I\'m going on an all-asteroid diet!',
-            'I like bacon too! Buy some from my site! bakinsomebacon.com',
-        ];
+//        $comments = $commentRepository->findBy(['article' => $article]);
+//        $comments = $article->getComments();
 
 //        dump($slug, $this);
 
 
         return $this->render('article/show.html.twig', [
             'article'=>$article,
-            'comments' => $comments,
         ]);
     }
 
