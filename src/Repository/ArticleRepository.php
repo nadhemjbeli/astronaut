@@ -6,6 +6,7 @@ use App\Entity\Article;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\QueryBuilder;
 use Doctrine\Persistence\ManagerRegistry;
+use Gedmo\Sluggable\Util\Urlizer;
 
 /**
  * @method Article|null find($id, $lockMode = null, $lockVersion = null)
@@ -26,12 +27,14 @@ class ArticleRepository extends ServiceEntityRepository
 
     public function findAllPublishedOrderedByNewest()
     {
+        Urlizer::class;
         return $this->addIsPublishedQueryBuilder()
             ->orderBy('a.publishedAt', 'DESC')
             ->getQuery()
             ->getResult()
         ;
     }
+
 
 
     /*
