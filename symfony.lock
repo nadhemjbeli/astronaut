@@ -250,6 +250,12 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "sonata-project/doctrine-extensions": {
+        "version": "1.16.0"
+    },
+    "sonata-project/twig-extensions": {
+        "version": "1.9.1"
+    },
     "stof/doctrine-extensions-bundle": {
         "version": "1.7",
         "recipe": {
