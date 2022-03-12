@@ -124,8 +124,14 @@
     "httpsoft/http-message": {
         "version": "1.0.9"
     },
+    "knplabs/knp-components": {
+        "version": "v3.4.0"
+    },
     "knplabs/knp-markdown-bundle": {
         "version": "1.10.0"
+    },
+    "knplabs/knp-paginator-bundle": {
+        "version": "v5.8.0"
     },
     "knplabs/knp-time-bundle": {
         "version": "1.17.0"

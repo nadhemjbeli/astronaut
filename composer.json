@@ -10,6 +10,7 @@
         "doctrine/orm": "^2.11",
         "httpsoft/http-message": "^1.0",
         "knplabs/knp-markdown-bundle": "^1.10",
+        "knplabs/knp-paginator-bundle": "^5.8",
         "knplabs/knp-time-bundle": "^1.17",
         "nexylan/slack-bundle": "^2.3",
         "php-extended/php-http-message-factory-psr17": "^3.2",
