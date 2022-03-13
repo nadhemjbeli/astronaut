@@ -12,7 +12,6 @@ security:
             security: false
         main:
             anonymous: lazy
-            provider: app_user_provider
             guard:
                 authenticators:
                     - App\Security\LoginFormAuthenticator
