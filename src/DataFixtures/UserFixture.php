@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\ApiToken;
 use App\Entity\User;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
@@ -30,10 +31,10 @@ class UserFixture extends BaseFixture
                 $user->setTwitterUsername($this->faker->userName);
             }
 
-            /*$apiToken1 = new ApiToken($user);
+            $apiToken1 = new ApiToken($user);
             $apiToken2 = new ApiToken($user);
             $manager->persist($apiToken1);
-            $manager->persist($apiToken2);*/
+            $manager->persist($apiToken2);
 
             return $user;
         });
