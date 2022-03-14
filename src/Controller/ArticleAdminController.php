@@ -13,13 +13,15 @@ use Symfony\Component\Routing\Annotation\Route;
 class ArticleAdminController extends AbstractController
 {
     /**
-     * @Route("/admin/article/new")
+     * @Route("/admin/article/new", name="admin_article_new")
+     * @IsGranted("ROLE_ADMIN_ARTICLE")
      */
-    public function new(EntityManagerInterface $em){
+    public function new(EntityManagerInterface $em)
+    {
         die('todo');
 
         return new Response(sprintf(
-            'Hiya! new article id #%d slug %s',
+            'Hiya! New Article id: #%d slug: %s',
             $article->getId(),
             $article->getSlug()
         ));
