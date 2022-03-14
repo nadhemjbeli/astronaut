@@ -26,6 +26,10 @@ class UserFixture extends BaseFixture
                 'engage'
             ));
 
+            if ($this->faker->boolean) {
+                $user->setTwitterUsername($this->faker->userName);
+            }
+
             /*$apiToken1 = new ApiToken($user);
             $apiToken2 = new ApiToken($user);
             $manager->persist($apiToken1);
