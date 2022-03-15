@@ -26,7 +26,7 @@ class CommentAdminController extends AbstractController
         $pagination = $paginator->paginate(
             $queryBuilder, /* query NOT Result */
             $request->query->getInt('page', 1), /*page Number*/
-            10,/*limit per page*/
+            10/*limit per page*/
         );
 
         return $this->render('comment_admin/index.html.twig', [
