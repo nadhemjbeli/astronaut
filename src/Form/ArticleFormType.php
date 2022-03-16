@@ -66,6 +66,22 @@ class ArticleFormType extends AbstractType
                 'widget' => 'single_text',
             ]);
         }
+
+        $builder->get('location')->addEventListener(
+            FormEvents::POST_SUBMIT,
+            function(FormEvent $event){
+                /** @var Article|null $data */
+                $data = $event->getData();
+                if (!$data) {
+                    return;
+                }
+
+                $this->setupSpecificLocationNameField(
+                    $event->getForm()->getParent(),
+                    $data
+                );
+            }
+        );
     }
 
     public function configureOptions(OptionsResolver $resolver)
@@ -73,6 +89,29 @@ class ArticleFormType extends AbstractType
         $resolver->setDefaults([
             'data_class' => Article::class,
             'include_published_at' => false,
+        ]);
+    }
+
+    private function setupSpecificLocationNameField(FormInterface $form, ?string $location)
+    {
+        if (null === $location) {
+            $form->remove('specificLocationName');
+
+            return;
+        }
+
+        $choices = $this->getLocationNameChoices($location);
+
+        if (null === $choices) {
+            $form->remove('specificLocationName');
+
+            return;
+        }
+
+        $form->add('specificLocationName', ChoiceType::class, [
+            'placeholder' => 'Where exactly?',
+            'choices' => $choices,
+            'required' => false,
         ]);
     }
 
