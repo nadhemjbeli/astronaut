@@ -24,10 +24,9 @@
                     <span class="fa fa-{{ article.isPublished ? 'check' : 'times' }}"></span>
                 </td>
                 <td>
-                    {#<a href="{{ path('admin_article_edit', {
+                    <a href="{{ path('admin_article_edit', {
                         id: article.id
-                    }) }}">#}
-                    <a href="#">
+                    }) }}">
                         <span class="fa fa-pencil"></span>
                     </a>
                 </td>
