@@ -33,7 +33,9 @@ class ArticleFormType extends AbstractType
                 'help' => 'Choose something catchy!',
                 'required' => false
             ])
-            ->add('content')
+            ->add('content', null, [
+                'rows' => 15
+            ])
             ->add('author', UserSelectTextType::class, [
                 'disabled' => $isEdit
             ])

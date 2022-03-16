@@ -19,12 +19,12 @@ class TextareaSizeExtension implements FormTypeExtensionInterface
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        // TODO: Implement buildForm() method.
+
     }
 
     public function buildView(FormView $view, FormInterface $form, array $options)
     {
-        // TODO: Implement buildView() method.
+        $view->vars['attr']['rows'] = $options['rows'];
     }
 
     public function finishView(FormView $view, FormInterface $form, array $options)
@@ -34,7 +34,9 @@ class TextareaSizeExtension implements FormTypeExtensionInterface
 
     public function configureOptions(OptionsResolver $resolver)
     {
-        // TODO: Implement configureOptions() method.
+        $resolver->setDefaults([
+            'rows' => 10
+        ]);
     }
 
     public function getExtendedType()
