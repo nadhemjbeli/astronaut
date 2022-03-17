@@ -71,7 +71,7 @@ class Article
     private $tags;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="articles")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="articles", fetch="EXTRA_LAZY")
      * @ORM\JoinColumn(nullable=false)
      *@Assert\NotNull(message="Please set an author")
      */
